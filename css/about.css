@@ -1,0 +1,207 @@
+/* 소개 페이지 */
+body{
+    height: auto;
+    text-align: left;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+svg{
+    width: 15%;
+}
+header .title{
+    position: fixed;
+    width: 90vw;
+    z-index: 100;
+    margin:0;
+    padding: 2%;
+    text-align: right;
+}
+nav{
+    position: fixed;
+    bottom: 3%;
+    left: 48%;
+    z-index: 1000;
+}
+    nav button{
+        background-color: transparent;
+        cursor: pointer;
+        border-radius: 50%;
+        border: 1px solid burlywood;
+        transition: 0.5s;
+        z-index: 1000;
+    }
+    nav button:hover{
+        color: lightpink;
+    }
+
+#about{
+    background: url(../content/cloud.jpg) no-repeat;
+    background-size: cover;
+    height: 400vh;
+    width: auto;
+}
+
+.about_scroll{
+    position: sticky;
+    top: 0;
+    overflow-y: hidden;
+    overflow-x: auto;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.about_content{
+    padding-top: 15vh;
+    position: fixed;
+    display: flex;
+    top:0;
+    bottom:0;
+    left:0;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 100vh;
+    transition: 1s;
+    transform: translate(0,0);
+}
+.about_section{
+    width: 100vw;
+    height: 100%;
+    padding: 0 1%;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+}
+.wrap{
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 90%;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2%;
+    width: 50%;
+    height: 90%;
+    margin: auto 0;
+}
+    .text p{
+        width: 80%;
+        margin-top: 5%;
+        font-size: 1.1rem;
+    }
+    .img_grid{
+        width: 50%;
+        height: 90%;
+        display: grid;
+        grid-template-columns: repeat(2,49.5%);
+        grid-template-rows: repeat(2,49.5%);
+        grid-gap: 1%;
+    }
+    .img_grid button{
+        width: 100%;
+        height: 100%;
+        border: none;
+        transition: 1s;
+        background-size: 100% !important;
+    }
+
+button:hover, button:active, button:focus{
+    background-size: 130% !important;
+    border: 1px solid ghostwhite;
+}
+#anniversary_img1{
+    background: url(../content/봄.jpg) center top;}
+#anniversary_img2{
+    background: url(../content/여름.jpg) center top;}
+#anniversary_img3{
+    background: url(../content/가을.jpg) center top;}
+#anniversary_img4{
+    background: url(../content/겨울.jpg) center top;}
+
+#diary_img1{
+    background: url(../content/child.jpg) center;}
+#diary_img2{
+    background: url(../content/children.jpg) center;}
+#diary_img3{
+    background: url(../content/camping.jpg) center;}
+#diary_img4{
+    background: url(../content/family.jpg) center;}
+
+#music_img1{
+    background: url(../content/커플삽화_겨울.jpg) center;}
+#music_img2{
+    background: url(../content/커플삽화_대화.jpg) center;}
+#music_img3{
+    background: url(../content/camfire.jpg) center;}
+#music_img4{
+    background: url(../content/rain_삽화.png) center;}
+
+#album_img1{
+    background: url(../content/wedding.jpg) center;}
+#album_img2{
+    background: url(../content/sea.jpg) center;}
+#album_img3{
+    background: url(../content/호랑이.jpg) center;}
+#album_img4{
+    background: url(../content/heart.jpg) center;}
+
+@media all and (max-width:1024px){
+    .wrap button{
+        background-size: 120% !important;
+    }
+    button:hover, button:active, button:focus{
+        background-size: 150% !important;
+        border: 1px solid ghostwhite;
+    }
+    .text p{
+        width: 100%;
+        font-size: 1rem;
+    }
+}   
+@media all and (max-width:768px){
+    header .title a{
+        font-size: 2.3rem;
+    }
+    .wrap{
+        flex-direction: column;
+        font-size: 0.9rem;
+        width: 90%;
+    }
+        .text{
+            width: 100%;
+            height: 50%;
+            padding: 0;
+            margin: 0;
+        }
+        .text p{
+            overflow-y: scroll;
+        }
+        .text p::-webkit-scrollbar{
+            display: none;
+        }
+    .img_grid{
+        height: 45%;
+        width: 100%;
+    }
+    .about_section{
+        padding: 0;
+    }
+    nav{
+        bottom: 1%;
+        left: 40%;
+    }
+    svg{
+        height: 15%;
+    }
+}
+@media all and (max-width:480px){
+    .wrap{
+        width: 95%;
+    }
+}

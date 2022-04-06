@@ -1,0 +1,101 @@
+*{
+    font-family: 'SangjuDajungdagam';
+}
+html ::-webkit-scrollbar{
+    display: none;
+}
+main{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 657px;
+}
+.wrap{
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+}
+main section{
+    display: inline-block;
+    vertical-align: middle;
+    width: 49.7%;
+    line-height: 0;
+    margin: 0 auto;
+}
+main a{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 100%;
+    font-weight: 500;
+}
+img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    box-sizing: border-box;
+    background: none;
+}
+    img:hover{
+        background: rgba(37, 36, 36, 0.7);
+    }
+span{
+    display: inline-block;
+    position: absolute;
+    background: none;
+    font-size: 3rem;
+    line-height: 1.2;
+    letter-spacing: 1vw;
+    width: 100%;
+}
+/* b */
+.b_a{
+    background-image: url(../content/커플삽화_노을.jpg);
+    background-position: center center;
+    background-size: 110%;
+}
+    .b_a:hover{
+    background-size: 120%;
+    }
+.b_a span{
+    left: 0;
+    top: 7%;
+}
+    /* c */
+.c_a{
+    background: url(../content/커플삽화_코코아.jpg) center;
+    background-size: 110%;
+}
+    .c_a:hover{
+        background-size: 120%;
+    }
+.c_a span{
+    left: 0;
+    bottom: 13%;
+}
+
+@media all and (max-width:1024px){
+    span{
+        font-size: 2rem;
+    }
+}
+@media all and (max-width:768px){
+    .wrap section{
+        width: 100%;
+    }
+    main{
+        line-height: 0;
+    }
+    span{
+        font-size: 3rem;
+    }
+}
+
+@media all and (max-width:480px){
+    span{
+        font-size: 1.9rem;
+    }
+}

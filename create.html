@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>우리들의 비밀 이야기(회원가입)</title>
+        <meta name="viewport" content="width=device-width, initial-sclae=1, maximum-sclae=1">
+        <!-- JQUERY 적용 -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- SangjuDajungdagam font -->
+        <link href="https://webfontworld.github.io/sangju/SangjuDajungdagam.css" rel="stylesheet">
+        <!-- 잘풀리는 하루 font -->
+        <link href="https://webfontworld.github.io/Jalpullineun/JalpullineunHaru.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css/base.css">
+        <script src="./js/index.js"></script>
+    </head>
+    <body id="login">
+        <header></header>
+        <main>
+            <section class="loginForm">
+                <form action="" method="post" name="login" autocomplete="off">
+                    <h2>회원가입</h2>
+                    <div class="idForm">
+                        <ul>
+                            <li>
+                                <label for="user_id">ID</label>
+                                <input type="text" id="user_id">
+                            </li>
+                            <li>
+                                <label for="user_password">비밀번호</label>
+                                <input type="password" id="user_password">
+                            </li>
+                            <li>
+                                <label for="user_password">비밀번호 확인</label>
+                                <input type="password" id="user_password">
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="btn" href="index.html">create</a>
+                </form>
+            </section>
+        </main>
+        <script>
+            $(function(){
+                $("header").load("template/logout_header.html");
+            });
+            </script>
+    </body>
+</html>

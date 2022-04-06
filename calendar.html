@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>우리들의 비밀 이야기</title>
+        <meta name="viewport" content="width=device-width, initial-sclae=1, maximum-sclae=1">
+        <!-- aos추가 -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1000})
+        </script>
+        <!-- JQUERY 적용 -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- SangjuDajungdagam font -->
+        <link href="https://webfontworld.github.io/sangju/SangjuDajungdagam.css" rel="stylesheet">
+        <!-- 잘풀리는 하루 font -->
+        <link href="https://webfontworld.github.io/Jalpullineun/JalpullineunHaru.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css/index.css">
+        <script src="./js/index.js"></script>
+    </head>
+
+    <body>
+        <header></header>
+        <main></main>
+        <footer></footer>
+        <script>
+            $(function(){
+                $("header").load("template/header.html");
+                $("footer").load("template/footer.html");
+            });
+            </script>
+    </body>
+</html>

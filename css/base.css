@@ -1,0 +1,134 @@
+*{
+    font-family: 'JalpullineunHaru';
+}
+html,body,a,div,span,section,img,ul,li,h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    background-color:black;
+}
+a{
+    font-family: 'SangjuDajungdagam';
+    color: ghostwhite;
+    text-shadow: 1px 1px 3px black;
+    transition: 1s;
+    background: transparent;
+    cursor:pointer;
+}
+    a:hover{
+        color: lightyellow;
+        text-shadow: 2px 2px 3px darksalmon;
+    }
+.flex-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* login */
+#login{
+    background: url(../content/커플삽화_노을.jpg) center 30% no-repeat;
+    background-size: cover;
+    display: block;
+    position: relative;
+    text-align: center;
+}
+.loginForm{
+    background-color: rgba(37, 36, 36, 0.95);
+    display: inline-block;
+    width: 35%;
+    border-radius: 10px;
+    box-shadow:1px 1px 10px 5px black;
+    padding: 2%;
+    margin: 2%;
+    font-size: 1rem;
+    color: ghostwhite;
+}
+.loginForm h2{
+    margin: 2% 0;
+}
+.idForm{
+    margin: 2% 0% 10% 0%;
+    margin-top: 2%;
+    font-size: 1rem; 
+}
+.idForm ul li{
+    margin: 8% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.idForm input{
+    width: 50%;
+    border: none;
+    background: transparent;
+    border-bottom: 0.1rem solid ghostwhite;
+    outline:none;
+    padding-top: 4%;
+    font-size: 1rem;
+    color: ghostwhite;
+    text-align: center;
+}
+.btn {
+    display: inline-block;
+    width: 40%;
+    padding: 2% 0;
+    margin: 2%;
+    text-decoration: none;
+    font-size: 1.3rem;
+    background: linear-gradient(125deg,#eea971,#e74aa0,#df81ec);
+    background-position: left;
+    background-size: 200%;
+    border-radius: 3rem;
+    transition: 0.4s;
+    text-align: center;
+}
+    .btn:hover {
+        background-position: right;
+        font-weight: bold;
+        color:black;
+    }
+
+.to_create{
+    margin: 3%;
+}
+.to_create a{
+    text-decoration: underline wavy rgba(255, 192, 203, 0.4);
+}
+@media all and (max-width:1024px){
+    .loginForm{
+        width: 50%;
+    }
+    .btn{
+        margin: 5%;
+    }
+}
+@media all and (max-width:768px){
+    .loginForm{
+        width: 60%;
+    }
+    header .title{
+        padding: 5% !important;
+        font-size: 2.5rem !important;
+    }
+}
+
+@media all and (max-width:480px){
+    .loginForm{
+        width: 80%;
+    }
+    .loginForm h2{
+        margin: 5% 0;
+    }
+    .btn{
+        font-size: 1rem;
+    }
+    .to_create a{
+        margin: 3% 0;
+    }
+}
