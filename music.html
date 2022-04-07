@@ -11,13 +11,100 @@
         <!-- 잘풀리는 하루 font -->
         <link href="https://webfontworld.github.io/Jalpullineun/JalpullineunHaru.css" rel="stylesheet">
         <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/music+album.css">
     </head>
 
     <body id="music"> 
         <header></header>
-        <main>
-            <h4>뮤직</h4>
+        <main class="flex-row">
+            <section class="flex-row">
+                <div class="main_music">
+                    <img src="content/music1.jpg">
+                    <p>Adele<br>
+                        SKYFALL</p>
+                </div>
+                <div>
+                    <img src="content/music2.jpg">
+                    <p>Adele<br>
+                        Adele</p>
+                </div>
+                <div>
+                    <img src="content/music3.jpg">
+                    <p>아이유<br>
+                        라일락</p>
+                </div>
+                <div>
+                    <img src="content/music4.jpg">
+                    <p>아이유<br>
+                        Palette</p>
+                </div>
+                <div>
+                    <img src="content/music5.jpg">
+                    <p>아이유<br>
+                        마음을 드려요</p>
+                </div>
+            </section>
+
+            <section class="flex-row">
+                <div class="main_music">
+                    <img src="content/music6.jpg">
+                    <p>유스케X규현<br>
+                        늦은 후회[Vol.130]</p>
+                </div>
+                <div>
+                    <img src="content/music7.jpg">
+                    <p>위너<br>
+                        REALLY REALLY</p>
+                </div>
+                <div>
+                    <img src="content/music8.jpg">
+                    <p>정승환<br>
+                        다시,봄</p>
+                </div>
+                <div>
+                    <img src="content/music9.jpg">
+                    <p>정승환<br>
+                        너였다면</p>
+                </div>
+                <div>
+                    <img src="content/music10.jpg">
+                    <p>데이식스<br>
+                        예뻤어</p>
+                </div>
+            </section>
+
+            <section class="flex-row">
+                <div class="main_music">
+                    <img src="content/music11.jpg">
+                    <p>태연<br>
+                        WHY</p>
+                </div>
+                <div>
+                    <img src="content/music12.jpg">
+                    <p>태연<br>
+                        INVU</p>
+                </div>
+                <div>
+                    <img src="content/music13.jpg">
+                    <p>세븐틴<br>
+                        바람개비</p>
+                </div>
+                <div>
+                    <img src="content/music14.jpg">
+                    <p>세븐틴<br>
+                        예쁘다</p>
+                </div>
+                <div>
+                    <img src="content/music15.jpg">
+                    <p>세븐틴<br>
+                        HOME</p>
+                </div>
+            </section>
         </main>
+        <nav>
+            <button type="button" id="prev">&lt;</button>
+            <button type="button" id="next">&gt;</button>
+        </nav>
         <footer></footer>
         <script>
             $(function(){
@@ -25,5 +112,6 @@
                 $("footer").load("template/footer.html")
             });
         </script>
+        <script src="js/music.js"></script>
     </body>
 </html>

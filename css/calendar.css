@@ -1,7 +1,7 @@
 #calendar{
     background: url(../content/calendar2.png) top no-repeat;
     background-size: cover;
-    height: 120vh;
+    height: 100%;
     width: 100%;
     text-align: center;
 }
@@ -21,16 +21,16 @@
 .calendar_box {
     width: 40%;
     height: 80%;
-    margin: auto 5%;
-    padding: 2%;
+    margin: auto 3%;
+    padding: 1.5%;
     background:rgba(133, 64, 245, 0.6);
     border-radius: 1rem;
 }
 .anniversary_list{
     width: 40%;
     height: 80%;
-    margin: auto 5%;
-    padding: 2% 3% 3% 3%;
+    margin: auto 3%;
+    padding: 1% 3%;
     background-color: rgba(164, 112, 247, 0.6);
     border-radius: 1rem;
     color: ghostwhite;
@@ -60,6 +60,7 @@
     border-right: none;
     padding: 5% 0;
 }
+    
     .calendar_header {
         display: flex;
         justify-content: space-between;    
@@ -86,9 +87,16 @@
             border-left: 1px solid #333333;
             border-right: 1px solid #333333;
             }
+        .main{
+            height: 90%;
+        }
         .days {
             display: flex;
-            margin: 3% 0;
+            padding-top: 1%;
+            margin: 1% 0;
+            height: 10%;
+            border: 1px solid #333333;
+            border-radius: 1rem;
         }
             .day {
             width: calc(100% / 7);
@@ -97,19 +105,13 @@
         .dates {
         display: flex;
         flex-flow: row wrap;
-        height: 100%;
-        border-top: 1px solid #333333;
-        border-right: 1px solid #333333;
-        border-radius: 0.5rem;
+        height: 90%;
         }
     .date {
     width: calc(100% / 7);
     padding: 2%;
-    height: 9vh;
+    height: calc(100% / 6);
     text-align: right;
-    border-bottom: 1px solid #333333;
-    border-left: 1px solid #333333;
-    border-radius: 0.3rem;
     }
     .day:nth-child(7n + 1),
     .date:nth-child(7n + 1) {

@@ -17,14 +17,93 @@
     <body id="diary"> 
         <header></header>
         <main class="flex-row">
-            
+            <section>
+                <button type="button" class="flex-row" id = "diary_1">
+                    <span>2022-04-07 수요일</span>
+                    <p>커플사진</p>
+                </button>
+            </section>
+            <section>
+                <button type="button" class="flex-row" id = "diary_2">
+                    <span>2022-03-01 화요일</span>
+                    <p>오늘은 삼일절</p>
+                </button>
+            </section>
+            <section>
+                <button type="button" class="flex-row" id = "diary_3">
+                    <span>2022-02-05 토요일</span>
+                    <p>주말 외식</p>
+                </button>
+            </section>
+            <section>
+                <button type="button" class="flex-row" id = "diary_4">
+                    <span>2022-01-01 토요일</span>
+                    <p>2022 호랑이의 해를 맞이하며</p>
+                </button>
+            </section>
+            <section>
+                <button type="button" class="flex-row" id = "diary_5">
+                    <span>2021-12-25 토요일</span>
+                    <p>토요일의 크리스마스</p>
+                </button>
+            </section>
+            <section>
+                <button type="button" class="flex-row" id = "diary_6">
+                    <span>2021-11-11 목요일</span>
+                    <p>빼빼로 잔뜩 받은 빼빼로데이</p>
+                </button>
+            </section>
         </main>
+
+        <div id="diary_box">
+            <div></div>
+            <span></span>
+            <p></p>
+            <div id="text">
+                국가는 법률이 정하는 바에 의하여 재외국민을 보호할 의무를 진다. 헌법재판소의 장은 국회의 동의를 얻어 재판관중에서 대통령이 임명한다. 각급 선거관리위원회의 조직·직무범위 기타 필요한 사항은 법률로 정한다.
+
+                중앙선거관리위원회는 법령의 범위안에서 선거관리·국민투표관리 또는 정당사무에 관한 규칙을 제정할 수 있으며, 법률에 저촉되지 아니하는 범위안에서 내부규율에 관한 규칙을 제정할 수 있다.
+                
+                모든 국민은 법률이 정하는 바에 의하여 선거권을 가진다. 대통령·국무총리·국무위원·행정각부의 장·헌법재판소 재판관·법관·중앙선거관리위원회 위원·감사원장·감사위원 기타 법률이 정한 공무원이 그 직무집행에 있어서 헌법이나 법률을 위배한 때에는 국회는 탄핵의 소추를 의결할 수 있다.[ Lorem Ipsum]</div>
+            <button class="btn" type="button">close</button>
+        </div>
+
+        <!-- create modal창 -->
+        <div id="create">
+            <button class="btn" type="button">create</button>
+        </div>
+        <div id="create_modal">
+            <form method="post" action="" name="create_diary" class="flex-row">
+                <img src="content/커플삽화_대화.jpg">
+                <ul class="flex-row">
+                    <li>
+                        <label for="img">사진추가</label>
+                        <input type="file" id="img">
+                    </li>
+                    <li>
+                        <label for="date">날짜</label>
+                        <input type="date" id="date">
+                    </li>
+                    <li>
+                        <label for="title">제목</label>
+                        <input type="text" id="title">
+                    </li>
+                    <li>
+                        <label for="content">내용</label>
+                        <textarea id="content" cols="15" rows="10"></textarea>
+                    </li>
+                </ul>
+            </form>
+            <button class="btn" type="button">close</button>
+        </div>
+        
+        <footer></footer>
         <script>
             $(function(){
                 $("header").load("template/header.html");
                 $("footer").load("template/footer.html");
             });
         </script>
-        <script src="js/album.js"></script>
+        <script src="js/diary.js"></script>
     </body>
 </html>

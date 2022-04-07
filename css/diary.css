@@ -1,0 +1,184 @@
+#diary{
+    background: url(../content/diary.png);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+#diary main, header, footer{
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+header{height: 15%;}
+footer{height: 5%;}
+#diary main{
+    position:relative;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 65%;
+    overflow-y: scroll;
+}
+#diary main::-webkit-scrollbar{
+    width: 10px;
+}
+#diary main::-webkit-scrollbar-thumb{
+    background-color: #ed967b79;
+}
+#diary main::-webkit-scrollbar-track{
+    background-color:transparent;
+}
+
+#create{
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    width: 100%;
+    height: 15%;
+    text-align: center;
+}
+#create .btn{
+    padding: 0;
+    height: 40%;
+    width: 10%;
+    margin: 1.5% 0;
+    border: none;
+    color: lightyellow;
+}
+#diary section{
+    width: 40%;
+    height: 35%;
+    box-shadow: 1px 1px 10px 1px rgba(255, 255, 224, 0.5);
+    margin: 2%;
+}
+#diary section button{
+    align-items: flex-end;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 2%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#diary section p{
+    font-size: 1.3rem;
+}
+#diary section button:hover{
+    transform: scale(1.02);
+}
+#diary_1, .diary_1{
+    background: url(../content/diary3.png) center;
+    background-size: cover;
+}
+#diary_2, .diary_2{
+    background: url(../content/diary2.jpg) center 20%;
+    background-size: cover;
+}
+#diary_3, .diary_3{
+    background: url(../content/rain_삽화.png) center;
+    background-size: cover;
+    color: ghostwhite;
+}
+#diary_4, .diary_4{
+    background: url(../content/커플삽화_대화.jpg) center;
+    background-size: cover;
+}
+#diary_5, .diary_5{
+    background: url(../content/커플삽화_코코아.jpg) center;
+    background-size: cover;
+    color: ghostwhite;
+}
+#diary_6, .diary_6{
+    background: url(../content/diary4.png) center;
+    background-size: cover;
+}
+/* create modal */
+#create_modal{
+    position: absolute;
+    display: none;
+    top: 15%;
+    left: 15%;
+    width: 70%;
+    height: 80%;
+    padding: 3%;
+    background-color: #e2c2d5;
+    border-radius: 1rem;
+    text-align: center;
+}
+#create_modal form{
+    height: 90%;
+    width: 100%;
+}
+#create_modal img{
+    max-width: 50%;
+    max-height: 100%;
+    margin-right: 5%;
+}
+#create_modal ul{
+    width: 40%;
+    height: 100%;
+    list-style: none;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#create_modal button{
+    height: 10%;
+    width: 15%;
+    margin: 2% auto;
+    padding: 0;
+    border: none;
+}
+#create_modal li{
+    margin: 2% 0;
+    width: 100%;
+}
+#create_modal li input{
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+}
+#create_modal li textarea{
+    width: 100% !important;
+    height: 70% !important;
+    border: none;
+}
+
+/* diary modal */
+#diary_box{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    padding: 2% 3%;
+    overflow-y: scroll;
+    background-color: rgba(197, 179, 230, 0.95);
+    border-radius: 1rem;
+    text-align: center;
+}
+#diary_box::-webkit-scrollbar{
+    display: none;
+}
+#diary_box p{
+    font-size: 1.3rem;
+    margin: 1%;
+    font-weight: 500;
+}
+#diary_box button{
+    height: 8%;
+    width: 10%;
+    margin: 2%;
+    padding: 0;
+    border: none;
+}
+#diary_box div{
+    margin-bottom: 1%;
+    width: 100%;
+    height: 70%;
+}
+#text{
+    background: none !important;
+    line-height: 1.5rem;
+    padding: 2%;
+    height: 30% !important;
+    color: black;
+}
