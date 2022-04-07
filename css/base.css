@@ -1,5 +1,6 @@
 *{
     font-family: 'JalpullineunHaru';
+    font-size: 1rem;
 }
 html,body,a,div,span,section,img,ul,li,h1,h2,h3,h4,h5,h6,p{
     margin:0;
@@ -30,7 +31,7 @@ a{
 }
 
 
-/* login */
+/* login, create */
 #login{
     background: url(../content/커플삽화_노을.jpg) center 30% no-repeat;
     background-size: cover;
@@ -51,6 +52,7 @@ a{
 }
 .loginForm h2{
     margin: 2% 0;
+    font-size: 1.5rem;
 }
 .idForm{
     margin: 2% 0% 10% 0%;
@@ -100,12 +102,122 @@ a{
 .to_create a{
     text-decoration: underline wavy rgba(255, 192, 203, 0.4);
 }
+
+/* main */
+#main{
+    background: url(../content/커플삽화_노을.jpg) center top no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+#main header{
+    height: 22%;
+    background-color: rgba(37, 36, 36, 0.5);
+}
+#main footer{
+    height: 5%;
+    background-color: rgba(37, 36, 36, 0.5);
+}
+#main main{
+    width: 100%;
+    height: 73%;
+    background-color: rgba(37, 36, 36, 0.5);
+    text-align: center;
+}
+#main_wrap{
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+}
+.main_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 80%;
+    margin: auto 2.5%;
+    text-align: center;
+    color: #e9ecef;
+}
+.main_section a{
+    height: 65%;
+    width: 100%;
+    margin-bottom: 10%;
+    border-radius: 50%;
+    padding: 20% 10%;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.5);
+    background-color: #e9ecef;
+    color: #212529;
+    transition: 0.3s;
+    background-position: center;
+    cursor: pointer;
+}
+.main_section svg{
+    width: 100%;
+    max-height: 100%;
+    margin: auto 0;
+}
+.main_section span{
+    display: inline-block;
+    vertical-align: middle;
+    height: 20%;
+    padding: 1%;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+    #main_anniversary:hover{
+        background: url(../content/wedding.jpg) center;
+        background-size: 110%;
+        color: rgba(0, 0, 0, 0);
+    }
+    #main_diary:hover{
+        background: url(../content/커플삽화_대화.jpg) center;
+        background-size: 110%;
+        color: rgba(0, 0, 0, 0);
+    }
+    #main_music:hover{
+        background: url(../content/music3.jpg) center;
+        background-size: 110%;
+        color: rgba(0, 0, 0, 0);
+    }
+    #main_album:hover{
+        background: url(../content/봄.jpg) center;
+        background-size: 130%;
+        color: rgba(0, 0, 0, 0);
+    }
+
+
+/* responsive */
 @media all and (max-width:1024px){
     .loginForm{
         width: 50%;
     }
     .btn{
         margin: 5%;
+    }
+    #main_wrap{
+        flex-wrap: wrap;
+    }
+    .main_section{
+        width: 45%;
+        height: 45%;
+        margin: auto;
+    }
+    .main_section a{
+        height: 80%;
+        margin-bottom: 3%;
+        padding: 7%;
+        width: auto;
+    }
+    .main_section span{
+        height: 15%;
+        font-size: 1.3rem;
+    }
+    #main footer div{
+        font-size: 0.7rem !important;
     }
 }
 @media all and (max-width:768px){
@@ -115,6 +227,13 @@ a{
     header .title{
         padding: 5% !important;
         font-size: 2.5rem !important;
+    }
+    .main_section a{
+        padding: 15%;
+        height: 75%;
+    }
+    .main_section span{
+        font-size: 1rem;
     }
 }
 
@@ -130,5 +249,24 @@ a{
     }
     .to_create a{
         margin: 3% 0;
+    }
+    #main header{
+        height: 18%;
+    }
+    #main main{
+        height: 77%;
+    }
+    #main_wrap{
+        width: 95%;
+    }
+    #main section a{
+        height: 55%;
+        margin-bottom: 10%;
+    }
+    #main header .title a{
+        font-size: 2rem !important;
+    }
+    #main header nav a{
+        font-size: 0.9rem !important;
     }
 }

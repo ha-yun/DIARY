@@ -1,0 +1,158 @@
+#calendar{
+    background: url(../content/calendar2.png) top no-repeat;
+    background-size: cover;
+    height: 120vh;
+    width: 100%;
+    text-align: center;
+}
+#calendar header{
+    height: 15%;
+    background-color: rgba(37, 36, 36, 0.3);
+}
+#calendar footer{
+    height: 5%;
+    background-color: rgba(37, 36, 36, 0.3);
+}
+#calendar_main{
+    background-color: rgba(37, 36, 36, 0.3);
+    width: 100%;
+    height: 80%;
+}
+.calendar_box {
+    width: 40%;
+    height: 80%;
+    margin: auto 5%;
+    padding: 2%;
+    background:rgba(133, 64, 245, 0.6);
+    border-radius: 1rem;
+}
+.anniversary_list{
+    width: 40%;
+    height: 80%;
+    margin: auto 5%;
+    padding: 2% 3% 3% 3%;
+    background-color: rgba(164, 112, 247, 0.6);
+    border-radius: 1rem;
+    color: ghostwhite;
+}
+.anniversary_list h1{
+    padding: 1% 0;
+    font-size: 1.8rem;
+    height: 15%;
+    border-bottom: 1px solid rgb(164, 112, 247);
+}
+.anniversary_list ul{
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 85%;
+    list-style: none;
+    overflow-y: scroll;
+}
+.anniversary_list ul::-webkit-scrollbar{
+    display: none;
+}
+.anniversary_list li{
+    display: inline-block;
+    width: 100%;
+    border: 1px solid rgb(164, 112, 247);
+    border-top: none;
+    border-right: none;
+    padding: 5% 0;
+}
+    .calendar_header {
+        display: flex;
+        justify-content: space-between;    
+        align-items: center;
+        height: 10%;
+    }
+        .year-month {
+        font-size: 1rem;
+        }
+        .nav {
+        display: flex;
+        border: 1px solid #333333;
+        border-radius: 1rem;
+        }
+            .nav-btn {
+            border: none;
+            font-size: 1rem;
+            line-height: 1.2;
+            background-color: transparent;
+            cursor: pointer;
+            }
+            .go-today {
+            width: 80%;
+            border-left: 1px solid #333333;
+            border-right: 1px solid #333333;
+            }
+        .days {
+            display: flex;
+            margin: 3% 0;
+        }
+            .day {
+            width: calc(100% / 7);
+            text-align: center; 
+            }
+        .dates {
+        display: flex;
+        flex-flow: row wrap;
+        height: 100%;
+        border-top: 1px solid #333333;
+        border-right: 1px solid #333333;
+        border-radius: 0.5rem;
+        }
+    .date {
+    width: calc(100% / 7);
+    padding: 2%;
+    height: 9vh;
+    text-align: right;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #333333;
+    border-radius: 0.3rem;
+    }
+    .day:nth-child(7n + 1),
+    .date:nth-child(7n + 1) {
+    color: #c70d0d;
+    }
+    .day:nth-child(7n),
+    .date:nth-child(7n) {
+    color: #002c8a;
+    }
+    .other {
+        opacity: 0.3;
+    }
+    .today {
+    position: relative;
+    color: #eff30e;
+    }
+        .today::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: -1;
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-color: rgb(102, 36, 163);
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        content: '';
+        }
+
+    .anniversary{
+        display: inline-block;
+        width: 35%;
+        height: 55%;
+        text-align: center;
+        color: pink;
+        border-radius: 50%;
+        background-color: palevioletred;
+        cursor: pointer ;
+        animation: 5s infinite blink;
+    }
+    @keyframes blink{
+        50%{
+            background-color: rgba(216, 112, 147, 0.5);
+        }
+    }

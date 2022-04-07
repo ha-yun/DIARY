@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>우리들의 비밀 이야기(메인)</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!-- JQUERY 적용 -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- SangjuDajungdagam font -->
+        <link href="https://webfontworld.github.io/sangju/SangjuDajungdagam.css" rel="stylesheet">
+        <!-- 잘풀리는 하루 font -->
+        <link href="https://webfontworld.github.io/Jalpullineun/JalpullineunHaru.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/base.css">
+    </head>
+    <body id="main">
+        <header></header>
+        <main>
+            <div id="main_wrap">
+                <section class="main_section">
+                    <a id="main_anniversary" href="calendar.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-calendar-heart" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5ZM1 14V4h14v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1Zm7-6.507c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+                        </svg>
+                    </a>
+                    <span>기념일</span>
+                </section>
+
+                <section class="main_section">
+                    <a id="main_diary" href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmark-heart-fill" viewBox="0 0 16 16">
+                            <path d="M2 15.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v13.5zM8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+                        </svg>
+                    </a>
+                    <span>일기</span>
+                </section>
+
+                <section class="main_section">
+                    <a id="main_music" href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-music-note-list" viewBox="0 0 16 16">
+                            <path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                            <path fill-rule="evenodd" d="M12 3v10h-1V3h1z"/>
+                            <path d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1V2.82z"/>
+                            <path fill-rule="evenodd" d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                    </a>
+                    <span>음악추천</span>
+                </section>
+
+                <section class="main_section">
+                    <a id="main_album" href="album.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-images" viewBox="0 0 16 16">
+                            <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                            <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"/>
+                        </svg>
+                    </a>
+                    <span>앨범</span>
+                </section>
+            </div>
+        </main>
+        <footer></footer>
+        <script>
+            $(function(){
+                $("header").load('template/header.html');
+                $("footer").load('template/footer.html');
+            })
+        </script>
+    </body>
+</html>
+

@@ -2,34 +2,62 @@
 <html lang="ko">
     <head>
         <meta charset="utf-8">
-        <title>우리들의 비밀 이야기</title>
-        <meta name="viewport" content="width=device-width, initial-sclae=1, maximum-sclae=1">
-        <!-- aos추가 -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init({
-                duration: 1000})
-        </script>
+        <title>우리들의 비밀 이야기(기념일)</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <!-- JQUERY 적용 -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- SangjuDajungdagam font -->
         <link href="https://webfontworld.github.io/sangju/SangjuDajungdagam.css" rel="stylesheet">
         <!-- 잘풀리는 하루 font -->
         <link href="https://webfontworld.github.io/Jalpullineun/JalpullineunHaru.css" rel="stylesheet">
-        <link rel="stylesheet" href="./css/index.css">
-        <script src="./js/index.js"></script>
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/calendar.css">
     </head>
 
-    <body>
+    <body id="calendar"> 
         <header></header>
-        <main></main>
+        <main id="calendar_main" class="flex-row">
+            <section class="calendar_box">
+                <div class="calendar_header">
+                    <div class="year-month"></div>
+                    <div class="nav">
+                        <button class="nav-btn go-prev" onclick="prevMonth()">&lt;</button>
+                        <button class="nav-btn go-today" onclick="goToday()">Today</button>
+                        <button class="nav-btn go-next" onclick="nextMonth()">&gt;</button>
+                    </div>
+                </div>
+
+                <div class="main">
+                    <div class="days">
+                        <div class="day">일</div>
+                        <div class="day">월</div>
+                        <div class="day">화</div>
+                        <div class="day">수</div>
+                        <div class="day">목</div>
+                        <div class="day">금</div>
+                        <div class="day">토</div>
+                    </div>
+                    <div class="dates"></div>
+                </div>
+            </section>
+            <section class="anniversary_list">
+                <h1>기념일</h1>
+                <ul class="flex-row">
+                    <li>2022-04-06 : 한식</li>
+                    <li>2022-03-09 : 대한민국 제 20대 대통령 선거</li>
+                    <li>2022-02-04 : 입춘</li>
+                    <li>2022-02-01 : 설날</li>
+                    <li>2021-12-25 : 크리스마스</li>
+                </ul>
+            </section>
+        </main>
         <footer></footer>
         <script>
             $(function(){
                 $("header").load("template/header.html");
                 $("footer").load("template/footer.html");
             });
-            </script>
+        </script>
+        <script src="js/calendar.js"></script>
     </body>
 </html>

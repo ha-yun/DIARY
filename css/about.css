@@ -24,6 +24,7 @@ nav{
     z-index: 1000;
 }
     nav button{
+        font-family: 'SangjuDajungdagam';
         background-color: transparent;
         cursor: pointer;
         border-radius: 50%;
@@ -90,7 +91,14 @@ nav{
     height: 90%;
     margin: auto 0;
 }
+    .text h2{
+        font-size: 1.5rem;
+        margin: 1%;
+    }
     .text p{
+        padding-top: 2%;
+        border-top: 1px solid rgba(0, 0, 0, 0.3);
+        border-radius: 1rem;
         width: 80%;
         margin-top: 5%;
         font-size: 1.1rem;
@@ -108,7 +116,7 @@ nav{
         height: 100%;
         border: none;
         transition: 1s;
-        background-size: 100% !important;
+        background-size: 105% !important;
     }
 
 button:hover, button:active, button:focus{
@@ -116,40 +124,40 @@ button:hover, button:active, button:focus{
     border: 1px solid ghostwhite;
 }
 #anniversary_img1{
-    background: url(../content/봄.jpg) center top;}
+    background: url(../content/wedding.jpg) center;}
 #anniversary_img2{
-    background: url(../content/여름.jpg) center top;}
+    background: url(../content/birthday.jpg) center;}
 #anniversary_img3{
-    background: url(../content/가을.jpg) center top;}
+    background: url(../content/graduate.jpg) center;}
 #anniversary_img4{
-    background: url(../content/겨울.jpg) center top;}
+    background: url(../content/christmas.jpg) center;}
 
 #diary_img1{
-    background: url(../content/child.jpg) center;}
+    background: url(../content/커플삽화_대화.jpg) center;}
 #diary_img2{
-    background: url(../content/children.jpg) center;}
+    background: url(../content/rain_삽화.png) center;}
 #diary_img3{
-    background: url(../content/camping.jpg) center;}
+    background: url(../content/커플삽화_겨울.jpg) center;}
 #diary_img4{
-    background: url(../content/family.jpg) center;}
+    background: url(../content/커플삽화_코코아.jpg) center;}
 
 #music_img1{
-    background: url(../content/커플삽화_겨울.jpg) center;}
+    background: url(../content/music7.jpg) center;}
 #music_img2{
-    background: url(../content/커플삽화_대화.jpg) center;}
+    background: url(../content/music1.jpg) center;}
 #music_img3{
-    background: url(../content/camfire.jpg) center;}
+    background: url(../content/music3.jpg) center;}
 #music_img4{
-    background: url(../content/rain_삽화.png) center;}
+    background: url(../content/music5.jpg) center;}
 
 #album_img1{
-    background: url(../content/wedding.jpg) center;}
+    background: url(../content/봄.jpg) center top;}
 #album_img2{
-    background: url(../content/sea.jpg) center;}
+    background: url(../content/여름.jpg) center top;}
 #album_img3{
-    background: url(../content/호랑이.jpg) center;}
+    background: url(../content/가을.jpg) center top;}
 #album_img4{
-    background: url(../content/heart.jpg) center;}
+    background: url(../content/겨울.jpg) center top;}
 
 @media all and (max-width:1024px){
     .wrap button{
