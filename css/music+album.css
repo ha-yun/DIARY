@@ -63,7 +63,7 @@
 }
 #music section div img{
     max-width: 35vw;
-    max-height: 95%;
+    max-height: 90%;
     opacity: 0;
 }
 .main_music{
@@ -133,7 +133,7 @@
         }
         .wrap:hover{
             filter: saturate(150%);
-            transform: scale(1.03);
+            transform: scale(1.05);
         }
     #album p{
         width: 100%;

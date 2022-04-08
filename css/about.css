@@ -7,6 +7,18 @@ body::-webkit-scrollbar{
 }
 svg{
     width: 15%;
+    animation: color 10s infinite;
+}
+@keyframes color {
+    30%{
+        color: lightblue;
+    }
+    50%{
+        color: rgb(233, 104, 233);
+    }
+    70%{
+        color: coral;
+    }
 }
 header .title{
     position: fixed;
@@ -109,6 +121,12 @@ nav{
         grid-template-columns: repeat(2,49.5%);
         grid-template-rows: repeat(2,49.5%);
         grid-gap: 1%;
+        animation: bling 3s infinite;
+    }
+    @keyframes bling {
+        50%{
+            filter: saturate(180%);
+        }
     }
     .img_grid button{
         width: 100%;

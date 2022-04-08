@@ -29,6 +29,15 @@ a{
     align-items: center;
     justify-content: center;
 }
+header .title a{
+    animation: shadow 3s infinite;
+}
+@keyframes shadow {
+    50%{
+        color: lightyellow;
+        text-shadow: 1px 1px 3px darksalmon;
+    }
+}
 
 
 /* login, create */
@@ -90,7 +99,13 @@ a{
     transition: 0.4s;
     text-align: center;
     cursor: pointer;
+    animation: 3s spin infinite;
 }
+    @keyframes spin {
+        50%{
+            background-position: right;
+        }
+    }
     .btn:hover {
         background-position: right;
         font-weight: bold;
