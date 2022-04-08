@@ -81,11 +81,11 @@ span{
     span{
         font-size: 2rem;
     }
-}
-@media all and (max-width:768px){
     .wrap section{
         width: 100%;
     }
+}
+@media all and (max-width:768px){
     main{
         line-height: 0;
     }

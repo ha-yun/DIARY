@@ -43,7 +43,7 @@
 }
 .anniversary_list ul{
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     width: 100%;
     height: 85%;
     list-style: none;

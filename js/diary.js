@@ -12,8 +12,8 @@ $(function(){
         DiaryBox.fadeToggle();
         DiaryBox.children('div').removeClass();
         DiaryBox.children('div').addClass($(this).attr('id'));
-        DiaryBox.children('span').text($(this).children('span').text());
-        DiaryBox.children('p').text($(this).children('p').text());
+        DiaryBox.children('span').text($(this).children('.date').text());
+        DiaryBox.children('p').text($(this).children('.diary_title').text());
     }
     function CloseDiary(){
         DiaryBox.fadeToggle();

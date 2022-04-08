@@ -123,40 +123,40 @@ button:hover, button:active, button:focus{
     border: 1px solid ghostwhite;
 }
 #anniversary_img1{
-    background: url(../content/wedding.jpg) center;}
+    background: url(../content/wedding.jpg) center no-repeat;}
 #anniversary_img2{
-    background: url(../content/birthday.jpg) center;}
+    background: url(../content/birthday.jpg) center no-repeat;}
 #anniversary_img3{
-    background: url(../content/graduate.jpg) center;}
+    background: url(../content/graduate.jpg) center no-repeat;}
 #anniversary_img4{
-    background: url(../content/christmas.jpg) center;}
+    background: url(../content/christmas.jpg) center no-repeat;}
 
 #diary_img1{
-    background: url(../content/커플삽화_대화.jpg) center;}
+    background: url(../content/커플삽화_대화.jpg) center no-repeat;}
 #diary_img2{
-    background: url(../content/rain_삽화.png) center;}
+    background: url(../content/rain_삽화.png) center no-repeat;}
 #diary_img3{
-    background: url(../content/커플삽화_겨울.jpg) center;}
+    background: url(../content/커플삽화_겨울.jpg) center no-repeat;}
 #diary_img4{
-    background: url(../content/커플삽화_코코아.jpg) center;}
+    background: url(../content/커플삽화_코코아.jpg) center no-repeat;}
 
 #music_img1{
-    background: url(../content/music7.jpg) center;}
+    background: url(../content/music7.jpg) center no-repeat;}
 #music_img2{
-    background: url(../content/music1.jpg) center;}
+    background: url(../content/music1.jpg) center no-repeat;}
 #music_img3{
-    background: url(../content/music3.jpg) center;}
+    background: url(../content/music3.jpg) center no-repeat;}
 #music_img4{
-    background: url(../content/music5.jpg) center;}
+    background: url(../content/music5.jpg) center no-repeat;}
 
 #album_img1{
-    background: url(../content/봄.jpg) center top;}
+    background: url(../content/봄.jpg) center top no-repeat;}
 #album_img2{
-    background: url(../content/여름.jpg) center top;}
+    background: url(../content/여름.jpg) center top no-repeat;}
 #album_img3{
-    background: url(../content/가을.jpg) center top;}
+    background: url(../content/가을.jpg) center top no-repeat;}
 #album_img4{
-    background: url(../content/겨울.jpg) center top;}
+    background: url(../content/겨울.jpg) center top no-repeat;}
 
 @media all and (max-width:1024px){
     .wrap button{

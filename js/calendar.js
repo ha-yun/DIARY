@@ -63,7 +63,8 @@ if (viewMonth === today.getMonth() && viewYear === today.getFullYear()) {
 
   var AnniversaryList;
   AnniversaryList = [new Date('2022-4-6'), new Date('2022-3-9'), 
-  new Date('2022-2-4'), new Date('2022-2-1'), new Date('2021-12-25')];
+  new Date('2022-2-4'), new Date('2022-2-1'), new Date('2021-12-25'),
+  new Date('2021-10-9'), new Date('2021-9-21'), new Date('2021-8-15')];
   for (let anniversary of AnniversaryList){
     if( viewYear === anniversary.getFullYear() && viewMonth === anniversary.getMonth()){
     for (let date of document.querySelectorAll('.this')){
