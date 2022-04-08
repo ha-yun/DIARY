@@ -173,6 +173,7 @@ header .title a{
     color: #212529;
     transition: 0.3s;
     background-position: center;
+    background-size: cover;
     cursor: pointer;
 }
 .main_section svg{
@@ -189,23 +190,19 @@ header .title a{
     font-weight: 500;
 }
     #main_anniversary:hover{
-        background: url(../content/wedding.jpg) center;
-        background-size: 110%;
+        background: url(../content/wedding.jpg);
         color: rgba(0, 0, 0, 0);
     }
     #main_diary:hover{
-        background: url(../content/커플삽화_대화.jpg) center;
-        background-size: 110%;
+        background: url(../content/커플삽화_대화.jpg);
         color: rgba(0, 0, 0, 0);
     }
     #main_music:hover{
-        background: url(../content/music3.jpg) center;
-        background-size: 110%;
+        background: url(../content/music3.jpg);
         color: rgba(0, 0, 0, 0);
     }
     #main_album:hover{
-        background: url(../content/봄.jpg) center;
-        background-size: 130%;
+        background: url(../content/봄.jpg);
         color: rgba(0, 0, 0, 0);
     }
 
