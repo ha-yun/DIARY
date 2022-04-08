@@ -20,7 +20,7 @@ footer{height: 5%;}
     width: 10px;
 }
 #diary main::-webkit-scrollbar-thumb{
-    background-color: #ed967b79;
+    background-color: rgba(237, 150, 123, 0.5);
 }
 #diary main::-webkit-scrollbar-track{
     background-color:transparent;
@@ -56,7 +56,7 @@ footer{height: 5%;}
     transition: 0.5s;
     cursor: pointer;
 }
-#diary section p{
+.diary_title{
     font-size: 1.3rem;
 }
 #diary section button:hover{
@@ -185,7 +185,7 @@ footer{height: 5%;}
 }
 
 @media all and (max-width:768px){
-    #diary section p{
+    .diary_title{
         font-size: 1.1rem;
     }
     #diary section span{

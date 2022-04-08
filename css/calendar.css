@@ -23,7 +23,7 @@
     height: 80%;
     margin: auto 3%;
     padding: 1.5%;
-    background:rgba(133, 64, 245, 0.6);
+    background: rgb(168 181 209);
     border-radius: 1rem;
 }
 .anniversary_list{
@@ -31,7 +31,7 @@
     height: 80%;
     margin: auto 3%;
     padding: 1% 3%;
-    background-color: rgba(164, 112, 247, 0.6);
+    background-color: rgba(158, 196, 254, 0.6);
     border-radius: 1rem;
     color: ghostwhite;
 }
@@ -39,7 +39,7 @@
     padding: 1% 0;
     font-size: 1.8rem;
     height: 15%;
-    border-bottom: 1px solid rgb(164, 112, 247);
+    border-bottom: 1px solid rgba(5, 43, 101, 0.8);
 }
 .anniversary_list ul{
     flex-direction: column;
@@ -55,7 +55,7 @@
 .anniversary_list li{
     display: inline-block;
     width: 100%;
-    border: 1px solid rgb(164, 112, 247);
+    border: 1px solid rgba(5, 43, 101, 0.8);
     border-top: none;
     border-right: none;
     padding: 5% 0;

@@ -131,7 +131,7 @@ a{
 #main_wrap{
     display: flex;
     justify-content: center;
-    width: 85%;
+    width: 80%;
     height: 100%;
     margin: 0 auto;
 }
@@ -147,6 +147,7 @@ a{
     color: #e9ecef;
 }
 .main_section a{
+    display: flex;
     height: 65%;
     width: 100%;
     margin-bottom: 10%;
