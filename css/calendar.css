@@ -92,7 +92,7 @@
         }
         .days {
             display: flex;
-            padding-top: 1%;
+            padding: 1% 0;
             margin: 1% 0;
             height: 10%;
             border: 1px solid #333333;
@@ -158,3 +158,33 @@
             background-color: rgba(216, 112, 147, 0.5);
         }
     }
+
+@media all and (max-width: 768px){
+    html{
+        height: auto;
+    }
+    #calendar header{
+        height: auto;
+        padding: 5% 0;
+    }
+    #calendar_main{
+        flex-direction: column;
+        justify-content: flex-start;
+        height: auto;
+    }
+    #calendar_main section{
+        width: 85%;
+        height: 75vh;
+        margin-bottom: 8%;
+        padding: 5%;
+    }
+
+}
+@media all and (max-width: 480px){
+    #calendar_main section{
+        height: 55vh;
+    }
+    .anniversary_list h1{
+        font-size: 1.3rem;
+    }
+}

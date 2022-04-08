@@ -3,6 +3,9 @@
         우리들의 비밀 이야기
     </a>
 </div>
+<nav>
+    <a href="index.html">Logout</a>
+</nav>
 
 <style>
 header{
@@ -12,9 +15,19 @@ header .title{
     padding: 1.5%; 
     text-shadow: 3px 3px 3px rgb(176, 164, 240);
     background: transparent;
+    margin: 0 auto;
 }
 header .title a{
     font-size: 3rem; 
     text-decoration: none;
+}
+header nav{
+    display: none;
+}
+
+@media all and (max-width:480px) {
+    .title a{
+        font-size: 2.5rem !important;
+    }
 }
 </style>

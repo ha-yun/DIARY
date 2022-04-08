@@ -1,6 +1,5 @@
 /* 소개 페이지 */
 body{
-    height: auto;
     text-align: left;
 }
 body::-webkit-scrollbar{
@@ -173,9 +172,6 @@ button:hover, button:active, button:focus{
     }
 }   
 @media all and (max-width:768px){
-    header .title a{
-        font-size: 2.3rem;
-    }
     .wrap{
         flex-direction: column;
         font-size: 0.9rem;
@@ -196,6 +192,7 @@ button:hover, button:active, button:focus{
     .img_grid{
         height: 45%;
         width: 100%;
+        margin-bottom: 2%;
     }
     .about_section{
         padding: 0;
@@ -211,5 +208,11 @@ button:hover, button:active, button:focus{
 @media all and (max-width:480px){
     .wrap{
         width: 95%;
+    }
+    .text h2{
+        font-size: 1.3rem;
+    }
+    .text p{
+        font-size: 0.9rem;
     }
 }

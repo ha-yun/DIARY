@@ -21,7 +21,7 @@ $(function(){
         }else if(MusicMainX < 0 && MusicMainX == -(MusicMainWidth-MusicSection*2)){
             MusicMainX = parseFloat(MusicMainX) - parseFloat(MusicSection);
             MusicMain.css({'transform':'translate('+ MusicMainX+'px,'+0+')'})
-        }else if(MusicMainX < 0 && MusicMainX == -(MusicMainWidth-MusicSection)){
+        }else{
             MusicMain.css({'transform':'translate('+ 0+','+0+')'})}
     }
 
@@ -35,10 +35,9 @@ $(function(){
         }else if(MusicMainX < 0 && MusicMainX == -(MusicMainWidth-MusicSection)){
             MusicMainX = parseInt(MusicMainX) + parseInt(MusicSection);
             MusicMain.css({'transform':'translate('+ MusicMainX+'px,'+0+')'})
-        }else if(MusicMainX < 0 && MusicMainX == -(MusicMainWidth-MusicSection*2)){
+        }else{
             MusicMain.css({'transform':'translate('+ 0+','+0+')'})}
     }
-
 
     function EventList(){
         MusicDiv.on('click', ShowMusic);

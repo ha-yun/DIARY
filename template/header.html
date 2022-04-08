@@ -3,6 +3,10 @@
         우리들의 비밀 이야기
     </a>
 </div>
+<div class="menu_btn">
+    <button type="button" onclick="ShowMenu()">=</button>
+</div>
+
 <nav>
     <ul class="flex-row">
         <li>
@@ -41,11 +45,110 @@ header .title a{
     text-decoration: none;
     font-size: 3rem; 
 }
-nav{
+.menu_btn{
+    display: none;
     width: 50%;
+    height: 30%;
+    z-index: 100;
 }
-nav li{
+    .menu_btn button{
+        width: 10%;
+        height: 100%;
+        margin: auto 0;
+        margin-left: 58%;
+        border-radius: 1rem;
+        border: 1px solid rgb(176, 164, 240);
+        background-color: lightyellow;
+        cursor: pointer;
+        font-weight: 500;
+        transition: 0.8s;
+    }
+    .menu_btn button:hover{
+        background-color: #495057;
+        color: lightyellow;
+    }
+header nav{
+    width: 50%;
+    display: block;
+}
+header nav li{
     padding: 4%;
     list-style: none;
 }
+@media all and (max-width:1024px){
+    header nav{
+        display: none;
+    }
+    .menu_btn{
+        display: inline-block;
+    }
+}
+@media all and (max-width:768px){
+    header .title{
+        padding: 4% !important;
+        width: 70% !important;
+    }
+    .menu_btn{
+        width: 30% !important;
+    }
+    .menu_btn button{
+        width: 20% !important;
+        margin-left: 20% !important;
+    }
+    .accordion{
+        padding: 12% 5% 2% 5% !important;
+    }
+}
+@media all and (max-width:480px){
+    header .title{
+        padding: 0 !important;
+    }
+    header .title a{
+        font-size: 2rem !important;
+    }
+    .menu_btn button{
+        width: 35% !important;
+        margin-left: 0% !important;
+    }
+    .accordion{
+        padding: 23% 6% 2% 6% !important;
+    }
+}
+
+.accordion{
+    display: block;
+    position: absolute;
+    top: 0%;
+    right: 1%;
+    width: auto;
+    height: auto;
+    padding: 8% 6% 2% 6%;
+    background-color: rgba(33, 37, 41, 0.9);
+    border-radius: 1rem;
+    z-index: 50;
+}
+.accordion ul{
+    flex-direction: column;
+}
+.accordion ul li{
+    margin: 5%;
+    padding: 5%;
+}
 </style>
+<script>
+    // responsive menu
+    var Nav = document.querySelector("header").children[2];
+    function ShowMenu (){
+        if(Nav.classList.contains('accordion')==false){
+            Nav.classList.add('accordion');
+        }else{
+            Nav.classList.remove('accordion');}
+    }
+    function responsiveMenu(){
+        if (window.matchMedia('(min-width: 1024px)').matches){
+            Nav.classList.remove('accordion');
+        }
+    }
+
+    window.addEventListener('resize', responsiveMenu, false);
+</script>
