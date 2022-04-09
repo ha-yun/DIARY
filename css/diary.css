@@ -184,6 +184,7 @@ footer{height: 5%;}
     color: black;
 }
 
+/* responsive */
 @media all and (max-width:768px){
     .diary_title{
         font-size: 1.1rem;
@@ -252,5 +253,19 @@ footer{height: 5%;}
     #create_modal button{
         width: 30%;
         height: 8%
+    }
+}
+
+/* 파이어폭스 */
+@-moz-document url-prefix(){
+    #diary_box{
+        scrollbar-width: none;
+    }
+    #diary main{
+        scrollbar-width: thin;
+        scrollbar-color: rgba(237, 150, 123, 0.5) transparent;
+    }
+    #create_modal form{
+        scrollbar-width: none;
     }
 }

@@ -143,6 +143,7 @@
             display: block;
         }
 
+/* responsive */
 @media all and (max-width:768px){
     #music main section{
         flex-direction: column;
@@ -195,5 +196,16 @@
     }
     #album p{
         font-size: 1.3rem;
+    }
+}
+
+/* 파이어폭스 */
+@-moz-document url-prefix(){
+    #music main section{
+        scrollbar-width: none;
+    }
+    :root{
+        scrollbar-width: thin;
+        scrollbar-color: salmon lightyellow;
     }
 }

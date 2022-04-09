@@ -77,10 +77,8 @@ span{
     bottom: 13%;
 }
 
+/* responsive */
 @media all and (max-width:1024px){
-    span{
-        font-size: 2rem;
-    }
     .wrap section{
         width: 100%;
     }
@@ -93,9 +91,15 @@ span{
         font-size: 3rem;
     }
 }
-
 @media all and (max-width:480px){
     span{
         font-size: 1.9rem;
+    }
+}
+
+/* 파이어폭스 */
+@-moz-document url-prefix(){
+    :root{
+        scrollbar-width: none;
     }
 }

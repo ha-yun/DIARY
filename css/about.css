@@ -176,6 +176,7 @@ button:hover, button:active, button:focus{
 #album_img4{
     background: url(../content/겨울.jpg) center top no-repeat;}
 
+/* responsive */
 @media all and (max-width:1024px){
     .wrap button{
         background-size: 120% !important;
@@ -232,5 +233,15 @@ button:hover, button:active, button:focus{
     }
     .text p{
         font-size: 0.9rem;
+    }
+}
+
+/* 파이어폭스 */
+@-moz-document url-prefix(){
+    :root{
+        scrollbar-width: none;
+    }
+    .text p{
+        scrollbar-width: none;
     }
 }

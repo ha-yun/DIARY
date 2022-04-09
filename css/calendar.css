@@ -170,13 +170,14 @@
         }
     }
 
+/* responsive */
 @media all and (max-width: 768px){
     html{
         height: auto;
     }
     #calendar header{
         height: auto;
-        padding: 8% 0;
+        padding: 2% 0;
     }
     #calendar_main{
         flex-direction: column-reverse;
@@ -193,10 +194,20 @@
 }
 @media all and (max-width: 480px){
     *{font-size: 0.9rem;}
+    #calendar header{
+        padding: 5% 0;
+    }
     #calendar_main section{
         height: 55vh;
     }
     .anniversary_list h1{
         font-size: 1.3rem;
+    }
+}
+
+/* 파이어폭스 */
+@-moz-document url-prefix(){
+    .anniversary_list ul{
+        scrollbar-width: none;
     }
 }
