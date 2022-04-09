@@ -166,14 +166,13 @@ header .title a{
     height: 65%;
     width: 100%;
     margin-bottom: 10%;
-    border-radius: 50%;
+    border-radius: 3rem;
     padding: 20% 10%;
     box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.5);
     background-color: #e9ecef;
+    background-position: center;
     color: #212529;
     transition: 0.3s;
-    background-position: center;
-    background-size: cover;
     cursor: pointer;
 }
 .main_section svg{
@@ -190,19 +189,23 @@ header .title a{
     font-weight: 500;
 }
     #main_anniversary:hover{
-        background: url(../content/wedding.jpg);
+        background: url(../content/wedding.jpg) center no-repeat;
+        background-size: 120%;
         color: rgba(0, 0, 0, 0);
     }
     #main_diary:hover{
-        background: url(../content/커플삽화_대화.jpg);
+        background: url(../content/커플삽화_대화.jpg) center no-repeat;
+        background-size: 120%;
         color: rgba(0, 0, 0, 0);
     }
     #main_music:hover{
-        background: url(../content/music3.jpg);
+        background: url(../content/music3.jpg) center no-repeat;
+        background-size: 120%;
         color: rgba(0, 0, 0, 0);
     }
     #main_album:hover{
-        background: url(../content/봄.jpg);
+        background: url(../content/봄.jpg) center  no-repeat;
+        background-size: 120%;
         color: rgba(0, 0, 0, 0);
     }
 

@@ -11,6 +11,7 @@
         backdrop-filter: saturate(230%);
     }
 }
+
 #calendar header{
     height: 15%;
     background-color: rgba(37, 36, 36, 0.3);
@@ -22,10 +23,9 @@
     animation: back 3s infinite;
 }
 #calendar_main{
-    background-color: rgba(37, 36, 36, 0.3);
+    background-color: rgba(37, 36, 36, 0.1);
     width: 100%;
     height: 80%;
-    animation: back 3s infinite;
 }
 .calendar_box {
     width: 40%;
@@ -81,9 +81,6 @@
         align-items: center;
         height: 10%;
     }
-        .year-month {
-        font-size: 1rem;
-        }
         .nav {
         display: flex;
         border: 1px solid #333333;
@@ -179,10 +176,10 @@
     }
     #calendar header{
         height: auto;
-        padding: 5% 0;
+        padding: 8% 0;
     }
     #calendar_main{
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: flex-start;
         height: auto;
     }
@@ -195,6 +192,7 @@
 
 }
 @media all and (max-width: 480px){
+    *{font-size: 0.9rem;}
     #calendar_main section{
         height: 55vh;
     }
