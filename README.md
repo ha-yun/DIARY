@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=Cylinder&color=timeGradient&height=200&section=header&text=우리들의 비밀 이야기&fontSize=90&fontColor=222)
+![header](https://capsule-render.vercel.app/api?type=Cylinder&color=timeGradient&height=200&section=header&text=우리들의비밀이야기&fontSize=90&fontColor=222)
 
 ## 소개
 * 1인 프로젝트
