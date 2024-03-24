@@ -1,6 +1,7 @@
-![header](https://capsule-render.vercel.app/api?type=Cylinder&color=timeGradient&height=200&section=header&text=우리들의비밀이야기&fontSize=90&fontColor=222)
+![header](https://capsule-render.vercel.app/api?type=Cylinder&color=timeGradient&height=100&section=header&text=DIARY&fontSize=60&fontColor=222)
 
 ## 소개
+* 우리들의 비밀 이야기
 * 1인 프로젝트
 * 반응형, 웹표준, 크로스 브라우징, 가로스크롤, Modal,인클루드
 * HTML, CSS, JS, JQuery
