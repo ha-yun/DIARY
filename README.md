@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=Cylinder&color=timeGradient&height=100&section=header&text=DIARY&fontSize=60&fontColor=222)
+![header](https://capsule-render.vercel.app/api?type=Cylinder&color=timeGradient&height=300&section=header&text=DIARY&fontSize=60&fontColor=222)
 
 ## 소개
 * 우리들의 비밀 이야기
